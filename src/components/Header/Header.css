@@ -1,0 +1,43 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-height: 300px;
+    padding: 12px;
+    
+}
+
+.header__left {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.header__logo > img {
+    object-fit: contain;
+    height: 30px;
+    margin-right: 12px;
+}
+
+.header__name {
+    border-left: 1px solid grey;
+    padding-left: 8px;
+}
+
+.header__right {
+    
+}
+
+.header__list {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.header__item {
+    margin-right: 20px;
+}
+
+a{text-decoration:none}
+a:hover, a:focus{text-decoration:none}
+a:hover, a:active{outline:none}
