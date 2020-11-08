@@ -17,6 +17,7 @@
 .examples__category {
     flex: 0.25;
     margin-bottom: 40px;
+    padding: 8px;
 }
 
 .examples__category > img {
