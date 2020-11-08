@@ -1,5 +1,5 @@
 .examples {
-    padding: 40px 40px;
+    padding: 80px 40px 40px;
     text-align: center;
     background-color: #F0F0F0;
 }
@@ -16,6 +16,7 @@
 
 .examples__category {
     flex-basis: 0.25;
+    width: 25%;
     margin-bottom: 40px;
     padding: 8px;
 }
@@ -29,7 +30,7 @@
     font-weight: 400;
 }
 
-@media (max-width: 520px) {
+@media (max-width: 768px) {
     .examples__category {
         flex-basis: .50;
         width: 50%;
@@ -46,10 +47,16 @@
     }
 
     .examples__category > img {
-        max-height: 80px;
+        max-height: 100px;
     }
 
     .examples__category > h4 {
         font-size: 14px;
+    }
+}
+
+@media (max-width: 320px) {
+    .examples__category > img {
+        max-height: 80px;
     }
 }
