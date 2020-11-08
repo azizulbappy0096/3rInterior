@@ -29,7 +29,7 @@
     font-weight: 400;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 520px) {
     .examples > h1 {
         font-size: 18px;
     }
