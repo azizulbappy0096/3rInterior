@@ -6,7 +6,7 @@ import Fade from 'react-reveal/Fade';
 
 function Examples() {
     return (
-        <div className="examples">
+        <div className="examples" id="examples">
             <Slide left>
             <h1> BROWSE BY CATEGORIES </h1>
             </Slide>

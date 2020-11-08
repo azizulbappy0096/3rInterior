@@ -51,7 +51,7 @@
     transform: translateX(-50%);
     transition: all 0.5s linear;
     width: 100%;
-    background-color: orange;
+    background-color: #504e4ae6;
     padding: 20px;
     z-index: 1000;
   }
@@ -65,6 +65,7 @@
     margin-bottom: 12px;
     font-size: 22px;
     margin-right: 0;
+    color: white;
   }
 
   .header__right--mobile {
@@ -75,9 +76,9 @@
 
 .header__nav--mobile {
   position: absolute;
-  top: 50%;
+  top: 100%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translateX(-50%);
   transition: all 0.5s linear;
 }
 

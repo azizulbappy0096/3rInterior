@@ -1,7 +1,7 @@
 .workingPlan {
     text-align: center;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin: 40px 8px;
+    
 }
 
 .workingPlan__title {
@@ -53,5 +53,9 @@
         flex-direction: column;
         align-items: center;
         margin-bottom: 16px;
+    }
+
+    .workingPlan > h1 {
+        font-size: 26px;
     }
 }

@@ -10,7 +10,7 @@ function Location() {
   const renderMarker = (map, maps) => {
 
     let marker = new maps.Marker({
-      position: { lat: 23.8126748, lng: 90.4188666 },
+      position: { lat: 23.812630, lng: 90.418710 },
       map,
       label: "3r"
     });
