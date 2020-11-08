@@ -3,6 +3,7 @@ import './App.css';
 import Banner from "./components/Banner/Banner";
 import Examples from "./components/Examples/Examples";
 import Header from "./components/Header/Header";
+import Location from "./components/Location/Location";
 import WorkingProcess from "./components/WorkingProcess/WorkingProcess";
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
       <Banner />
       <WorkingProcess />
       <Examples />
+      <Location />
     </div>
   );
 }

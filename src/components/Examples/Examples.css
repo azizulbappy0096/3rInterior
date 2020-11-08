@@ -15,7 +15,7 @@
 }
 
 .examples__category {
-    flex: 0.25;
+    flex-basis: 0.25;
     margin-bottom: 40px;
     padding: 8px;
 }
@@ -30,12 +30,19 @@
 }
 
 @media (max-width: 520px) {
+    .examples__category {
+        flex-basis: .50;
+        width: 50%;
+     }
+}
+
+@media (max-width: 520px) {
     .examples > h1 {
         font-size: 18px;
     }
 
     .examples__category {
-       flex: 0.50;
+       width: 50%;
     }
 
     .examples__category > img {

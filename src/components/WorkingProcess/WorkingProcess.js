@@ -1,6 +1,8 @@
 import React from "react";
 import "./WorkingProcess.css";
 
+import Fade from 'react-reveal/Fade';
+
 function WorkingProcess() {
   return (
     <div className="workingPlan">
@@ -9,6 +11,7 @@ function WorkingProcess() {
       <h1 className="workingPlan__title">Online interior design in 3 steps</h1>
 
       <div className="workingPlan__steps">
+        <Fade bottom>
         <section className="workingPlan__step">
           <img src="./img/HP.jpg" />
           <div className="workingPlan__step--md">
@@ -39,6 +42,7 @@ function WorkingProcess() {
             </p>
           </div>
         </section>
+        </Fade>
       </div>
     </div>
   );
