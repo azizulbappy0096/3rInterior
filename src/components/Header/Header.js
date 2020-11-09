@@ -15,7 +15,7 @@ function Header() {
   };
 
   return (
-    <header className="header">
+    <header className="header" >
       <Link to="/">
         <div className="header__left header__logo">
           <img src="./img/logo.jpg" />

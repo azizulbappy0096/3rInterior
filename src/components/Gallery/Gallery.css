@@ -1,0 +1,50 @@
+.gallery {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.gallery__item {
+    flex-basis: 40%;
+    margin-bottom: 28px;
+}
+
+.gallery__img {
+    background-image: url("https://blog.modsy.com/wp-content/uploads/2020/10/tr_9ce11129-1d4b-4703-8beb-89813e4c89ac_692439_16_elsie_userview_11-1030x675.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    object-fit: contain;
+}
+
+.gallery__border {
+    height: 0.5px;
+    border: 0.5px solid rgb(133, 129, 129);
+    margin: 5% 8%;
+}
+
+.gallery__info {
+    padding: 0 2%;
+}
+
+.gallery__info > h3 {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 1.4;
+    color: rgb(65, 62, 62);
+}
+
+@media (max-width: 425px) {
+    .gallery__item {
+        flex-basis: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .gallery__img {
+        
+        height: 200px;
+        
+    }
+}

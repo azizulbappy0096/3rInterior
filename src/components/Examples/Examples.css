@@ -15,8 +15,8 @@
 }
 
 .examples__category {
-    flex-basis: 0.25;
-    width: 25%;
+    flex-basis: 25%;
+    /* width: 25%; */
     margin-bottom: 40px;
     padding: 8px;
 }

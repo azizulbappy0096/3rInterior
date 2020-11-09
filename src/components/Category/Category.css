@@ -1,0 +1,67 @@
+.category__banner--large, .category__banner--small {
+    min-height: 400px;
+    background-image: url("https://cdn.decorilla.com/online-decorating/wp-content/uploads/2018/10/modern-interior-design-grey-living-room2.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.category__banner--small {
+    display: none;
+}
+
+.category__content {
+    max-width: 80%;
+    min-height: 60%;
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    background-color: rgb(255, 255, 255, 0.8);
+    padding: 40px 60px;
+    text-align: center;
+}
+
+.category__content > h1 {
+    font-size: 32px;
+    color: grey;
+    margin-bottom: 8px;
+}
+
+.category__content > p {
+    color: rgb(65, 62, 62);
+    line-height: 1.5;
+}
+
+.category__gallery {
+    margin: 40px 60px;
+}
+
+.category__button {
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+}
+
+@media (max-width: 768px) {
+    .category__banner--small {
+        display: block;
+    }
+
+    .category__banner--large {
+        background-image: none;
+        min-height: auto;
+    }
+
+    .category__content {
+        max-width: 100%;
+        position: static;
+        text-align: left;
+        padding: 40px 20px;
+    }
+
+    .category__gallery {
+        margin: 40px 20px;
+    }
+}
+
