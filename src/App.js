@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./App.css";
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
@@ -12,14 +12,31 @@ import Location from "./components/Location/Location";
 import WorkingProcess from "./components/WorkingProcess/WorkingProcess";
 import Category from "./components/Category/Category";
 
+
 function App() {
+  const [category, setCategory] = useState();
+
+  useEffect(() => {
+   fetch("./data.json").then(response => {
+     if(response.ok) {
+       return response.json();
+     }
+
+     throw new Error("Request failed!");
+
+   }, networkError => console.log(networkError.message)
+   ).then(jsonResponse => {
+    setCategory(jsonResponse.category)
+   })
+  }, [])
+
   return (
     <div className="app">
       <Router>
         <Switch>
           <Route path="/category">
             <Header />
-            <Category />
+            <Category data={category}/>
             <Footer />
           </Route>
           <Route path="/">
@@ -28,7 +45,9 @@ function App() {
             <WorkingProcess />
             <Examples />
             <Location />
+           
             <Contact />
+            
             <Footer />
           </Route>
         </Switch>

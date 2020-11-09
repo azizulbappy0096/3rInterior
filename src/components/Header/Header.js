@@ -9,13 +9,13 @@ function Header() {
   const [isMenu, setIsMenu] = useState(false);
 
   const handleMenu = () => {
-    if(window.innerWidth <= 768) {
+    if (window.innerWidth <= 768) {
       setIsMenu(!isMenu);
     }
   };
 
   return (
-    <header className="header" >
+    <header className="header">
       <Link to="/">
         <div className="header__left header__logo">
           <img src="./img/logo.jpg" />
@@ -26,11 +26,15 @@ function Header() {
       <nav className={`header__right ${isMenu ? "header__nav--mobile" : ""}`}>
         <ul className="header__list">
           <a href="#" onClick={handleMenu}>
+            
             <li className="header__item"> Home </li>
+            
           </a>
+
           <a href="#examples" onClick={handleMenu}>
             <li className="header__item">Examples </li>
           </a>
+
           <a href="#contactUs" onClick={handleMenu}>
             <li className="header__item"> Contact Us </li>
           </a>

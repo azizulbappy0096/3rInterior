@@ -33,17 +33,13 @@
 @media (max-width: 768px) {
     .examples__category {
         flex-basis: .50;
-        width: 50%;
+
      }
 }
 
 @media (max-width: 520px) {
     .examples > h1 {
         font-size: 18px;
-    }
-
-    .examples__category {
-       width: 50%;
     }
 
     .examples__category > img {

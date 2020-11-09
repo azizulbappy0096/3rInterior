@@ -1,12 +1,28 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Gallery from "../Gallery/Gallery";
 import "./Category.css";
 
-import {CategoryButton} from "../styled components/button";
+import { CategoryButton } from "../styled components/button";
 import ArrowUpwardIcon from '@material-ui/icons/ArrowUpward';
 
 
-function Category() {
+
+function Category({data}) {
+
+  const [gallery, setGallery] = useState({
+
+  });
+
+  useEffect(() => {
+    const urlString = window.location.href;
+    const url = new URL(urlString);
+    const type = url.searchParams.get("type");
+    const getData = data?.[type];
+    window.scrollTo(0, 0);
+    setGallery(getData);
+    
+  }, [data])
+
   
   return (
     <div className="category" id="top">
@@ -14,21 +30,16 @@ function Category() {
         <section className="category__banner--small"></section>
         <section className="category__banner--large">
           <div className="category__content">
-            <h1>Living Room Design Stories</h1>
+  <h1>{gallery?.["title"]}</h1>
 
             <p>
-              For most of us, the Living Room is where we spend the most time,
-              but finding the right look for your space can be a challenge. Read
-              the design stories from real customers and learn more about how
-              they designed their living room online. See how we’ve helped them
-              and get inspired with these behind-the-scenes looks at some of our
-              favorite living room transformations.
+              {gallery?.["sub-title"]}
             </p>
           </div>
         </section>
       </section>
       <section className="category__gallery">
-            <Gallery />
+            <Gallery data={gallery?.gallery} />
       </section>
       <section className="category__button">
       <CategoryButton href="#top">

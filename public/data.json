@@ -1,0 +1,161 @@
+{
+  "category": {
+    "living-room": {
+      "title": "Living",
+      "sub-title": "Living sub",
+      "gallery": [
+        {
+          "id": 1,
+          "title": "L1",
+          "img": "./img/living-room.jpg"
+        },
+        {
+          "id": 2,
+          "title": "L2",
+          "img": "./img/living-room.jpg"
+        },
+        {
+          "id": 3,
+          "title": "L3",
+          "img": "./img/living-room.jpg"
+        },
+        {
+          "id": 4,
+          "title": "L4",
+          "img": "./img/living-room.jpg"
+        }
+      ]
+    },
+
+    "bed-room": {
+      "title": "Living",
+      "sub-title": "Living sub",
+      "gallery": [
+        {
+          "id": 1,
+          "title": "L1",
+          "img": "./img/bed-room.jpg"
+        },
+        {
+          "id": 2,
+          "title": "L2",
+          "img": "./img/bed-room.jpg"
+        },
+        {
+          "id": 3,
+          "title": "L3",
+          "img": "./img/bed-room.jpg"
+        },
+        {
+          "id": 4,
+          "title": "L4",
+          "img": "./img/bed-room.jpg"
+        }
+      ]
+    },
+    "dining-room": {
+      "title": "Living",
+      "sub-title": "Living sub",
+      "gallery": [
+        {
+          "id": 1,
+          "title": "D1",
+          "img": "./img/dining-room.jpg"
+        },
+        {
+          "id": 2,
+          "title": "D2",
+          "img": "./img/dining-room.jpg"
+        },
+        {
+          "id": 3,
+          "title": "D3",
+          "img": "./img/dining-room.jpg"
+        },
+        {
+          "id": 4,
+          "title": "D4",
+          "img": "./img/dining-room.jpg"
+        }
+      ]
+    },
+    "office": {
+      "title": "Living",
+      "sub-title": "Living sub",
+      "gallery": [
+        {
+          "id": 1,
+          "title": "O1",
+          "img": "./img/office.jpg"
+        },
+        {
+          "id": 2,
+          "title": "O2",
+          "img": "./img/office.jpg"
+        },
+        {
+          "id": 3,
+          "title": "O3",
+          "img": "./img/office.jpg"
+        },
+        {
+          "id": 4,
+          "title": "O4",
+          "img": "./img/office.jpg"
+        }
+      ]
+    },
+    "kids": {
+      "title": "Living",
+      "sub-title": "Living sub",
+      "gallery": [
+        {
+          "id": 1,
+          "title": "K1",
+          "img": "./img/kids.jpg"
+        },
+        {
+          "id": 2,
+          "title": "K2",
+          "img": "./img/kids.jpg"
+        },
+        {
+          "id": 3,
+          "title": "K3",
+          "img": "./img/kids.jpg"
+        },
+        {
+          "id": 4,
+          "title": "K4",
+          "img": "./img/kids.jpg"
+        }
+      ]
+    },
+    "nursery": {
+      "title": "Living",
+      "sub-title": "Living sub",
+      "gallery": [
+        {
+          "id": 1,
+          "title": "N1",
+          "img": "./img/nursery.jpg"
+        },
+        {
+          "id": 2,
+          "title": "N2",
+          "img": "./img/nursery.jpg"
+        },
+        {
+          "id": 3,
+          "title": "N3",
+          "img": "./img/nursery.jpg"
+        },
+        {
+          "id": 4,
+          "title": "N4",
+          "img": "./img/nursery.jpg"
+        }
+      ]
+    }
+  }
+}
