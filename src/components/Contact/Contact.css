@@ -31,7 +31,7 @@
 
 
 
-input, textarea {
+.contact__form > input, .contact__input > input, .contact__form > textarea {
     border: 1px solid grey;
     padding: 12px 8px;
     border-radius: 4px;

@@ -1,61 +1,58 @@
 .workingPlan {
-    text-align: center;
-    margin: 40px 8px;
-    
+  text-align: center;
+  margin: 40px 8px;
 }
 
 .workingPlan__title {
-    margin-bottom: 28px;
+  margin-bottom: 28px;
 }
 
 .workingPlan__steps {
-    display: flex;
-    justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
 }
 
-
 .workingPlan__step > img {
-    max-height: 150px;
-    object-fit: cover;
-    margin-bottom: 20px;
+  max-height: 150px;
+  object-fit: cover;
+  margin-bottom: 20px;
 }
 
 .workingPlan__step--md {
-    max-width: 300px;
+  max-width: 300px;
 }
 
 .workingPlan__step--md > h2 {
-    font-size: 22px;
-    margin-bottom: 20px;
+  font-size: 22px;
+  margin-bottom: 20px;
 }
 
 .workingPlan__step--md > p {
-    font-size: 17px;
+  font-size: 17px;
 }
 
 @media (max-width: 768px) {
-    .workingPlan__steps {
-        display: block;
-        margin: auto 20px;
-    }
+  .workingPlan__steps {
+    display: block;
+    margin: auto 20px;
+  }
 
-    .workingPlan__step {
-        display: flex;
-        justify-content: space-evenly;
-        margin-bottom: 16px;
-    }
-
+  .workingPlan__step {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 16px;
+  }
 }
 
 @media (max-width: 628px) {
-    .workingPlan__step {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-bottom: 16px;
-    }
+  .workingPlan__step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 16px;
+  }
 
-    .workingPlan > h1 {
-        font-size: 26px;
-    }
+  .workingPlan > h1 {
+    font-size: 26px;
+  }
 }

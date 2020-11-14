@@ -11,24 +11,27 @@ import Header from "./components/Header/Header";
 import Location from "./components/Location/Location";
 import WorkingProcess from "./components/WorkingProcess/WorkingProcess";
 import Category from "./components/Category/Category";
-
+import Admin from "./components/Admin/Admin";
 
 function App() {
   const [category, setCategory] = useState();
 
   useEffect(() => {
-   fetch("./data.json").then(response => {
-     if(response.ok) {
-       return response.json();
-     }
+    fetch("./data.json")
+      .then(
+        (response) => {
+          if (response.ok) {
+            return response.json();
+          }
 
-     throw new Error("Request failed!");
-
-   }, networkError => console.log(networkError.message)
-   ).then(jsonResponse => {
-    setCategory(jsonResponse.category)
-   })
-  }, [])
+          throw new Error("Request failed!");
+        },
+        (networkError) => console.log(networkError.message)
+      )
+      .then((jsonResponse) => {
+        setCategory(jsonResponse.category);
+      });
+  }, []);
 
   return (
     <div className="app">
@@ -36,8 +39,11 @@ function App() {
         <Switch>
           <Route path="/category">
             <Header />
-            <Category data={category}/>
+            <Category data={category} />
             <Footer />
+          </Route>
+          <Route path="/admin">
+            <Admin />
           </Route>
           <Route path="/">
             <Header />
@@ -45,9 +51,7 @@ function App() {
             <WorkingProcess />
             <Examples />
             <Location />
-           
             <Contact />
-            
             <Footer />
           </Route>
         </Switch>

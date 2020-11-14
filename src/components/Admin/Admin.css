@@ -1,0 +1,80 @@
+.admin {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.admin--loading::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #00000026;
+}
+
+.admin__form {
+    width: 50%;
+    padding: 20px;
+    position: relative;
+}
+
+.admin__input {
+    width: 100%;
+    padding: 12px 12px;
+    margin-top: 12px;
+    margin-bottom: 8px;
+    border: 1px solid grey;
+    border-radius: 4px;
+}
+
+.admin__remove {
+    color: red;
+    position: absolute;
+    top: 10%;
+    right: 0;
+    cursor: pointer;
+}
+
+.admin__more {
+    display: flex;
+}
+
+.admin__addButton {
+    margin-right: 12px;
+}
+
+.admin__form > select:focus {
+    outline: none;
+} 
+
+.admin__loader  {
+    display: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+@media (max-width: 768px) {
+    .admin__form {
+        width: 80%;
+    }
+
+    .admin__form > select {
+        border: 1px solid;
+        padding: 4px;
+    }
+
+    .admin__input {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 425px) {
+    .admin__remove {
+        width: 20px;
+    }
+}
