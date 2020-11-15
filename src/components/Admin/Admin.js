@@ -6,6 +6,7 @@ import CancelIcon from "@material-ui/icons/Cancel";
 
 function Admin() {
   const [formKey, setFormKey] = useState([]);
+  const [successMessage, setSuccessMessage] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
 
   const handleAdd = () => {
@@ -120,7 +121,7 @@ function Admin() {
         console.log("No");
       }
     });
-    console.log(formatedData[0].getAll("category")[0]);
+    // console.log(formatedData[0].getAll("category")[0]);
 
     for(let i = 0; i < formatedData.length; i++) {
       if(formatedData[i].getAll("photo").length > 0 ) {
@@ -129,7 +130,10 @@ function Admin() {
               body: formatedData[i],
             }).then((response) => {
               if (response.ok) {
-                console.log("OKAY");
+                setSuccessMessage([...successMessage, `${formatedData[i].getAll("category")[0]} successfully uploaded`]);
+                console.log(response)
+              }else {
+                console.log("failed")
               }
             });
       }
@@ -196,6 +200,7 @@ function Admin() {
       </div>
       <div className="admin__loader" style={isLoading ? {display: "block"} : {display: "none"}}>
         <img src="./img/loader.gif" alt="loader" />
+        <p>sda</p>
       </div>
     </div>
   );
